@@ -1,9 +1,9 @@
 import React from 'react';
-import Card from '../Card/Card';
+import Card from '../UI/Card/Card';
 import ExpenseItem from '../ExpenseItem/ExpenseItem';
 import './Expenses.css'
 
-function Expenses (props) {
+const Expenses = (props) => {
     return(
         <Card className="expenses">
             {props.expenses.map(expense => <ExpenseItem 
